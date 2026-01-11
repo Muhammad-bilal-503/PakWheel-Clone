@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PakWheels - Pakistan's #1 Automotive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Unified Navigation Bar -->
+    <nav class="unified-navbar">
+        <div class="unified-nav-container">
+            <!-- Left: Logo and Tagline -->
+            <div class="nav-left">
+                <div class="nav-logo-section">
+                    <a href="index.html" class="nav-logo-link">
+                        <img src="PakWheels Logo Vector.png" alt="PakWheels" class="unified-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-text-fallback-unified" style="display:none; align-items:center; gap:10px;">
+                            <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                        </div>
+                    </a>
+                    <div class="nav-tagline">PAKISTAN'S #1 AUTOMOTIVE WEBSITE</div>
+                </div>
+            </div>
+            
+            <!-- Center: Main Menu -->
+            <ul class="unified-nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="used-cars.html" class="nav-link">Used Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="new-cars.html" class="nav-link">New Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bikes.html" class="nav-link">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="autostore.html" class="nav-link">Auto Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forums.html" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a href="guides.html" class="nav-link">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sell-your-car.html" class="nav-link">Sell Your Car</a>
+                </li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <div class="nav-right">
+                <a href="#urdu" class="nav-action-link">اردو</a>
+                <button class="btn-nav-login">Login</button>
+                <button class="btn-nav-signup">Sign Up</button>
+                <a href="sell-your-car.html" class="btn-nav-post-ad">Post an Ad</a>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <h1 class="hero-title">Find Used Cars in Pakistan</h1>
+            <p class="hero-subtitle">With thousands of cars, we have just the right one for you</p>
+            
+            <!-- Search Form -->
+            <div class="search-box">
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <input type="text" id="make-model" name="make-model" class="search-input" placeholder="e.g. Toyota Corolla">
+                    </div>
+                    <div class="search-field">
+                        <select id="city" name="city" class="search-select">
+                            <option value="">All Cities</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="rawalpindi">Rawalpindi</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="multan">Multan</option>
+                            <option value="peshawar">Peshawar</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <select id="price" name="price" class="search-select">
+                            <option value="">Price Range</option>
+                            <option value="0-500000">Under 5 Lakh</option>
+                            <option value="500000-1000000">5 Lakh - 10 Lakh</option>
+                            <option value="1000000-2000000">10 Lakh - 20 Lakh</option>
+                            <option value="2000000-5000000">20 Lakh - 50 Lakh</option>
+                            <option value="5000000+">Above 50 Lakh</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">
+                        <span class="search-icon">🔍</span>
+                        Search
+                    </button>
+                </form>
+                <button class="btn-advanced-filter" id="advancedFilterBtn">Advanced Filter ></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Filter Section (Hidden by default) -->
+    <section class="advanced-filter-section" id="advancedFilterSection" style="display: none;">
+        <div class="container">
+            <div class="filter-box">
+                <h3>Advanced Filters</h3>
+                <div class="filter-grid">
+                    <div class="filter-field">
+                        <label>Year</label>
+                        <select class="filter-select">
+                            <option value="">All Years</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+                    <div class="filter-field">
+                        <label>Transmission</label>
+                        <select class="filter-select">
+                            <option value="">All</option>
+                            <option value="manual">Manual</option>
+                            <option value="automatic">Automatic</option>
+                        </select>
+                    </div>
+                    <div class="filter-field">
+                        <label>Fuel Type</label>
+                        <select class="filter-select">
+                            <option value="">All</option>
+                            <option value="petrol">Petrol</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="hybrid">Hybrid</option>
+                        </select>
+                    </div>
+                    <div class="filter-field">
+                        <label>Mileage</label>
+                        <input type="text" class="filter-input" placeholder="Max km">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Cars by Make Section -->
+    <section class="section new-cars-make">
+        <div class="container">
+            <h2 class="section-title">New Cars by Make</h2>
+            <div class="makes-grid">
+                <a href="new-cars.html?make=toyota" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EToyota%3C/text%3E%3C/svg%3E" alt="Toyota">
+                    </div>
+                    <h3 class="make-name">Toyota</h3>
+                </a>
+                <a href="new-cars.html?make=honda" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda%3C/text%3E%3C/svg%3E" alt="Honda">
+                    </div>
+                    <h3 class="make-name">Honda</h3>
+                </a>
+                <a href="new-cars.html?make=suzuki" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ESuzuki%3C/text%3E%3C/svg%3E" alt="Suzuki">
+                    </div>
+                    <h3 class="make-name">Suzuki</h3>
+                </a>
+                <a href="new-cars.html?make=hyundai" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHyundai%3C/text%3E%3C/svg%3E" alt="Hyundai">
+                    </div>
+                    <h3 class="make-name">Hyundai</h3>
+                </a>
+                <a href="new-cars.html?make=kia" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EKia%3C/text%3E%3C/svg%3E" alt="Kia">
+                    </div>
+                    <h3 class="make-name">Kia</h3>
+                </a>
+                <a href="new-cars.html?make=changan" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EChangan%3C/text%3E%3C/svg%3E" alt="Changan">
+                    </div>
+                    <h3 class="make-name">Changan</h3>
+                </a>
+                <a href="new-cars.html?make=proton" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EProton%3C/text%3E%3C/svg%3E" alt="Proton">
+                    </div>
+                    <h3 class="make-name">Proton</h3>
+                </a>
+                <a href="new-cars.html?make=mg" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EMG%3C/text%3E%3C/svg%3E" alt="MG">
+                    </div>
+                    <h3 class="make-name">MG</h3>
+                </a>
+                <a href="new-cars.html?make=faw" class="make-card">
+                    <div class="make-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23eeeeee' width='120' height='80'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='16' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EFAW%3C/text%3E%3C/svg%3E" alt="FAW">
+                    </div>
+                    <h3 class="make-name">FAW</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PakWheels Offerings Section -->
+    <section class="section offerings-section">
+        <div class="container">
+            <h2 class="section-title">PakWheels Offerings</h2>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">📝</div>
+                    <h3 class="offering-title">Sell It For Me</h3>
+                    <p class="offering-desc">We sell your car fast!</p>
+                    <a href="sell-your-car.html" class="offering-link">Learn More</a>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">📋</div>
+                    <h3 class="offering-title">Auction Sheet</h3>
+                    <p class="offering-desc">Get verified auction information</p>
+                    <a href="#auction" class="offering-link">Learn More</a>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🛡️</div>
+                    <h3 class="offering-title">Car Insurance</h3>
+                    <p class="offering-desc">Compare and buy car insurance</p>
+                    <a href="#insurance" class="offering-link">Learn More</a>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">💰</div>
+                    <h3 class="offering-title">Car Valuation</h3>
+                    <p class="offering-desc">Know your car's true value</p>
+                    <a href="#valuation" class="offering-link">Learn More</a>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🚗</div>
+                    <h3 class="offering-title">Test Drive at Home</h3>
+                    <p class="offering-desc">Test drive cars at your location</p>
+                    <a href="#testdrive" class="offering-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Your Car CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Want to Sell Your Car?</h2>
+                    <p class="cta-subtitle">Post your ad in 2 minutes!</p>
+                </div>
+                <div class="cta-button-wrapper">
+                    <a href="sell-your-car.html" class="btn-cta">Post Your Ad</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Your Car Section -->
+    <section class="sell-section">
+        <div class="container">
+            <h2 class="sell-section-title">Sell Your Car on PakWheels and Get the Best Price</h2>
+            <div class="sell-options">
+                <div class="sell-option-card">
+                    <h3 class="option-title">Sell It Myself!</h3>
+                    <ul class="option-features">
+                        <li>✓ Post an ad in 2 minutes</li>
+                        <li>✓ 20 million users</li>
+                        <li>✓ Connect directly with buyers</li>
+                    </ul>
+                    <a href="sell-your-car.html" class="btn-sell-red">Post Your Ad</a>
+                </div>
+                <div class="sell-option-card">
+                    <h3 class="option-title">Sell It For Me</h3>
+                    <ul class="option-features">
+                        <li>✓ Sell your car without hassle</li>
+                        <li>✓ Free Inspection & Featured ad</li>
+                        <li>✓ Maximize offer with sales agent</li>
+                    </ul>
+                    <a href="#sell-for-me" class="btn-sell-blue">Help Me Sell My Car!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About PakWheels</h4>
+                    <p class="footer-desc">Pakistan's #1 automotive marketplace. Buy and sell cars, bikes, and auto parts with confidence.</p>
+                    <div class="footer-logo">
+                        <img src="PakWheels Logo Vector.png" alt="PakWheels" class="footer-logo-img">
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="new-cars.html">New Cars</a></li>
+                        <li><a href="bikes.html">Bikes</a></li>
+                        <li><a href="autostore.html">Auto Store</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: support@pakwheels.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Address: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon">[FB] Facebook</a>
+                        <a href="#youtube" class="social-icon">[YT] YouTube</a>
+                        <a href="#instagram" class="social-icon">[IG] Instagram</a>
+                        <a href="#twitter" class="social-icon">[X] Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PakWheels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

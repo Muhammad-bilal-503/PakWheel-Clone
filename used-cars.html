@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Cars for Sale in Pakistan - PakWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Unified Navigation Bar -->
+    <nav class="unified-navbar">
+        <div class="unified-nav-container">
+            <!-- Left: Logo and Tagline -->
+            <div class="nav-left">
+                <div class="nav-logo-section">
+                    <a href="index.html" class="nav-logo-link">
+                        <img src="PakWheels Logo Vector.png" alt="PakWheels" class="unified-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-text-fallback-unified" style="display:none; align-items:center; gap:10px;">
+                            <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                        </div>
+                    </a>
+                    <div class="nav-tagline">PAKISTAN'S #1 AUTOMOTIVE WEBSITE</div>
+                </div>
+            </div>
+            
+            <!-- Center: Main Menu -->
+            <ul class="unified-nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="used-cars.html" class="nav-link active">Used Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="new-cars.html" class="nav-link">New Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bikes.html" class="nav-link">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="autostore.html" class="nav-link">Auto Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forums.html" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a href="guides.html" class="nav-link">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sell-your-car.html" class="nav-link">Sell Your Car</a>
+                </li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <div class="nav-right">
+                <a href="#urdu" class="nav-action-link">اردو</a>
+                <button class="btn-nav-login">Login</button>
+                <button class="btn-nav-signup">Sign Up</button>
+                <a href="sell-your-car.html" class="btn-nav-post-ad">Post an Ad</a>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <h1 class="page-hero-title">Used Cars for Sale in Pakistan</h1>
+            <p class="page-hero-subtitle">Browse thousands of verified used cars from trusted sellers</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="search-box">
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <label for="city">City</label>
+                        <select id="city" name="city" class="search-select">
+                            <option value="">All Cities</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="rawalpindi">Rawalpindi</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="multan">Multan</option>
+                            <option value="peshawar">Peshawar</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="make">Make</label>
+                        <select id="make" name="make" class="search-select">
+                            <option value="">All Makes</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="mitsubishi">Mitsubishi</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="kia">Kia</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="model">Model</label>
+                        <select id="model" name="model" class="search-select">
+                            <option value="">All Models</option>
+                            <option value="corolla">Corolla</option>
+                            <option value="civic">Civic</option>
+                            <option value="cultus">Cultus</option>
+                            <option value="city">City</option>
+                            <option value="alto">Alto</option>
+                            <option value="mehran">Mehran</option>
+                            <option value="wagonr">WagonR</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="price">Price Range</label>
+                        <select id="price" name="price" class="search-select">
+                            <option value="">All Prices</option>
+                            <option value="0-500000">Under 5 Lakh</option>
+                            <option value="500000-1000000">5 Lakh - 10 Lakh</option>
+                            <option value="1000000-2000000">10 Lakh - 20 Lakh</option>
+                            <option value="2000000-5000000">20 Lakh - 50 Lakh</option>
+                            <option value="5000000-10000000">50 Lakh - 1 Crore</option>
+                            <option value="10000000+">Above 1 Crore</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="year">Year</label>
+                        <select id="year" name="year" class="search-select">
+                            <option value="">All Years</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Search Cars</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Listings Section -->
+    <section class="section listings-section">
+        <div class="container">
+            <div class="listings-header">
+                <h2 class="section-title">Available Cars</h2>
+                <p class="listings-count">Showing 1,234 results</p>
+            </div>
+            <div class="cards-grid" id="carListings">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EToyota Corolla 2020%3C/text%3E%3C/svg%3E" alt="Toyota Corolla 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Toyota Corolla 2020</h3>
+                        <p class="card-price">PKR 3,500,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">15,000 km • Manual • 1.8L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda+Civic+2019%3C/text%3E%3C/svg%3E" alt="Honda Civic 2019">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda Civic 2019</h3>
+                        <p class="card-price">PKR 4,200,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">20,000 km • Automatic • 1.5L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ESuzuki+Cultus+2021%3C/text%3E%3C/svg%3E" alt="Suzuki Cultus 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suzuki Cultus 2021</h3>
+                        <p class="card-price">PKR 2,100,000</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">10,000 km • Manual • 1.0L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ENissan+Sunny+2018%3C/text%3E%3C/svg%3E" alt="Nissan Sunny 2018">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nissan Sunny 2018</h3>
+                        <p class="card-price">PKR 2,800,000</p>
+                        <p class="card-location">📍 Rawalpindi, Punjab</p>
+                        <p class="card-details">25,000 km • Automatic • 1.6L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EToyota+Camry+2021%3C/text%3E%3C/svg%3E" alt="Toyota Camry 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Toyota Camry 2021</h3>
+                        <p class="card-price">PKR 5,500,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">8,000 km • Automatic • 2.5L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda+City+2020%3C/text%3E%3C/svg%3E" alt="Honda City 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda City 2020</h3>
+                        <p class="card-price">PKR 3,800,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">12,000 km • CVT • 1.5L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn">Load More Cars</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About PakWheels</h4>
+                    <p class="footer-desc">Pakistan's #1 automotive marketplace. Buy and sell cars, bikes, and auto parts with confidence.</p>
+                    <div class="footer-logo">
+                        <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="new-cars.html">New Cars</a></li>
+                        <li><a href="bikes.html">Bikes</a></li>
+                        <li><a href="autostore.html">Auto Store</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: support@pakwheels.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Address: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon">[FB] Facebook</a>
+                        <a href="#youtube" class="social-icon">[YT] YouTube</a>
+                        <a href="#instagram" class="social-icon">[IG] Instagram</a>
+                        <a href="#twitter" class="social-icon">[X] Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PakWheels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Store - Car Parts & Accessories - PakWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Unified Navigation Bar -->
+    <nav class="unified-navbar">
+        <div class="unified-nav-container">
+            <!-- Left: Logo and Tagline -->
+            <div class="nav-left">
+                <div class="nav-logo-section">
+                    <a href="index.html" class="nav-logo-link">
+                        <img src="PakWheels Logo Vector.png" alt="PakWheels" class="unified-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-text-fallback-unified" style="display:none; align-items:center; gap:10px;">
+                            <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                        </div>
+                    </a>
+                    <div class="nav-tagline">PAKISTAN'S #1 AUTOMOTIVE WEBSITE</div>
+                </div>
+            </div>
+            
+            <!-- Center: Main Menu -->
+            <ul class="unified-nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="used-cars.html" class="nav-link">Used Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="new-cars.html" class="nav-link">New Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bikes.html" class="nav-link">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="autostore.html" class="nav-link active">Auto Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forums.html" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a href="guides.html" class="nav-link">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sell-your-car.html" class="nav-link">Sell Your Car</a>
+                </li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <div class="nav-right">
+                <a href="#urdu" class="nav-action-link">اردو</a>
+                <button class="btn-nav-login">Login</button>
+                <button class="btn-nav-signup">Sign Up</button>
+                <a href="sell-your-car.html" class="btn-nav-post-ad">Post an Ad</a>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <h1 class="page-hero-title">Auto Store - Car Parts & Accessories</h1>
+            <p class="page-hero-subtitle">Find genuine auto parts, accessories, and car care products</p>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="section categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EEngine+Parts%3C/text%3E%3C/svg%3E" alt="Engine Parts">
+                    <div class="category-content">
+                        <h3>Engine Parts</h3>
+                        <p>1,234 Products</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EBody+Parts%3C/text%3E%3C/svg%3E" alt="Body Parts">
+                    <div class="category-content">
+                        <h3>Body Parts</h3>
+                        <p>856 Products</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EAccessories%3C/text%3E%3C/svg%3E" alt="Accessories">
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>2,145 Products</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ETyres+%26+Wheels%3C/text%3E%3C/svg%3E" alt="Tyres & Wheels">
+                    <div class="category-content">
+                        <h3>Tyres & Wheels</h3>
+                        <p>678 Products</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EInterior+Parts%3C/text%3E%3C/svg%3E" alt="Interior Parts">
+                    <div class="category-content">
+                        <h3>Interior Parts</h3>
+                        <p>923 Products</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Care%3C/text%3E%3C/svg%3E" alt="Car Care">
+                    <div class="category-content">
+                        <h3>Car Care</h3>
+                        <p>1,456 Products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="search-box">
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <label for="category">Category</label>
+                        <select id="category" name="category" class="search-select">
+                            <option value="">All Categories</option>
+                            <option value="engine">Engine Parts</option>
+                            <option value="body">Body Parts</option>
+                            <option value="accessories">Accessories</option>
+                            <option value="tyres">Tyres & Wheels</option>
+                            <option value="interior">Interior Parts</option>
+                            <option value="care">Car Care</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="make">Car Make</label>
+                        <select id="make" name="make" class="search-select">
+                            <option value="">All Makes</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="mitsubishi">Mitsubishi</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="model">Car Model</label>
+                        <select id="model" name="model" class="search-select">
+                            <option value="">All Models</option>
+                            <option value="corolla">Corolla</option>
+                            <option value="civic">Civic</option>
+                            <option value="cultus">Cultus</option>
+                            <option value="city">City</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="price">Price Range</label>
+                        <select id="price" name="price" class="search-select">
+                            <option value="">All Prices</option>
+                            <option value="0-1000">Under 1,000</option>
+                            <option value="1000-5000">1K - 5K</option>
+                            <option value="5000-10000">5K - 10K</option>
+                            <option value="10000-25000">10K - 25K</option>
+                            <option value="25000+">Above 25K</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="condition">Condition</label>
+                        <select id="condition" name="condition" class="search-select">
+                            <option value="">All Conditions</option>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                            <option value="refurbished">Refurbished</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Search Products</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Listings Section -->
+    <section class="section listings-section">
+        <div class="container">
+            <div class="listings-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="listings-count">Showing 1,567 results</p>
+            </div>
+            <div class="cards-grid" id="productListings">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Battery%3C/text%3E%3C/svg%3E" alt="Car Battery">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Car Battery 12V 60Ah</h3>
+                        <p class="card-price">PKR 8,500</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">New • Universal Fit</p>
+                        <p class="card-seller">Auto Parts Store</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Tyres%3C/text%3E%3C/svg%3E" alt="Car Tyres">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Alloy Wheels Set (4 Pcs)</h3>
+                        <p class="card-price">PKR 45,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">New • 15 inch</p>
+                        <p class="card-seller">Wheel Shop</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Seat+Covers%3C/text%3E%3C/svg%3E" alt="Car Seat Covers">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Premium Car Seat Covers</h3>
+                        <p class="card-price">PKR 12,000</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">New • Leather • Universal</p>
+                        <p class="card-seller">Accessories Store</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Mirror%3C/text%3E%3C/svg%3E" alt="Car Mirror">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Side Mirror (Pair)</h3>
+                        <p class="card-price">PKR 3,500</p>
+                        <p class="card-location">📍 Rawalpindi, Punjab</p>
+                        <p class="card-details">New • Power Adjustable</p>
+                        <p class="card-seller">Parts Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Headlights%3C/text%3E%3C/svg%3E" alt="Car Headlights">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">LED Headlights (Pair)</h3>
+                        <p class="card-price">PKR 15,000</p>
+                        <p class="card-location">📍 Faisalabad, Punjab</p>
+                        <p class="card-details">New • H4 Bulb Type</p>
+                        <p class="card-seller">Auto Store</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Wax%3C/text%3E%3C/svg%3E" alt="Car Wax">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Premium Car Wax Polish</h3>
+                        <p class="card-price">PKR 2,500</p>
+                        <p class="card-location">📍 Multan, Punjab</p>
+                        <p class="card-details">New • 500ml</p>
+                        <p class="card-seller">Car Care Shop</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Steering%3C/text%3E%3C/svg%3E" alt="Car Steering Wheel">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sports Steering Wheel</h3>
+                        <p class="card-price">PKR 18,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">New • Leather Wrap</p>
+                        <p class="card-seller">Performance Parts</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Exhaust%3C/text%3E%3C/svg%3E" alt="Car Exhaust">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Performance Exhaust System</h3>
+                        <p class="card-price">PKR 35,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">New • Stainless Steel</p>
+                        <p class="card-seller">Auto Mods</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Dash+Cam%3C/text%3E%3C/svg%3E" alt="Car Dash Cam">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">HD Dash Camera</h3>
+                        <p class="card-price">PKR 6,500</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">New • 1080p • Night Vision</p>
+                        <p class="card-seller">Electronics Store</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Floor+Mats%3C/text%3E%3C/svg%3E" alt="Car Floor Mats">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Premium Car Floor Mats</h3>
+                        <p class="card-price">PKR 4,500</p>
+                        <p class="card-location">📍 Peshawar, KPK</p>
+                        <p class="card-details">New • Rubber • 4 Pcs Set</p>
+                        <p class="card-seller">Interior Shop</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Air+Filter%3C/text%3E%3C/svg%3E" alt="Car Air Filter">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Air Filter (Universal)</h3>
+                        <p class="card-price">PKR 1,200</p>
+                        <p class="card-location">📍 Rawalpindi, Punjab</p>
+                        <p class="card-details">New • High Performance</p>
+                        <p class="card-seller">Parts Store</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECar+Sound+System%3C/text%3E%3C/svg%3E" alt="Car Sound System">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Car Sound System</h3>
+                        <p class="card-price">PKR 25,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">New • 4 Speakers + Subwoofer</p>
+                        <p class="card-seller">Audio Shop</p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About PakWheels</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cars.html">Used Cars</a></li>
+                        <li><a href="cars.html">New Cars</a></li>
+                        <li><a href="bikes.html">Bikes</a></li>
+                        <li><a href="autostore.html">Auto Parts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Dealers</h4>
+                    <ul>
+                        <li><a href="#dealer-login">Dealer Login</a></li>
+                        <li><a href="#become-dealer">Become a Dealer</a></li>
+                        <li><a href="#dealer-packages">Packages</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@pakwheels.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Address: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon">Facebook</a>
+                        <a href="#twitter" class="social-icon">Twitter</a>
+                        <a href="#instagram" class="social-icon">Instagram</a>
+                        <a href="#youtube" class="social-icon">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PakWheels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

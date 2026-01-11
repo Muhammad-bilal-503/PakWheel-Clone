@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Cars for Sale in Pakistan - PakWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">PakWheels</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="cars.html" class="nav-link active">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bikes.html" class="nav-link">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="autostore.html" class="nav-link">Auto Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#guides" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#guides" class="nav-link">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sell" class="nav-link">Sell Your Car</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-login">Login</button>
+                <button class="btn-post">Post Ad</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <h1 class="page-hero-title">Used Cars for Sale in Pakistan</h1>
+            <p class="page-hero-subtitle">Browse thousands of verified used cars from trusted sellers</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="search-box">
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <label for="city">City</label>
+                        <select id="city" name="city" class="search-select">
+                            <option value="">All Cities</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="rawalpindi">Rawalpindi</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="multan">Multan</option>
+                            <option value="peshawar">Peshawar</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="make">Make</label>
+                        <select id="make" name="make" class="search-select">
+                            <option value="">All Makes</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="mitsubishi">Mitsubishi</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="kia">Kia</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="model">Model</label>
+                        <select id="model" name="model" class="search-select">
+                            <option value="">All Models</option>
+                            <option value="corolla">Corolla</option>
+                            <option value="civic">Civic</option>
+                            <option value="cultus">Cultus</option>
+                            <option value="city">City</option>
+                            <option value="alto">Alto</option>
+                            <option value="mehran">Mehran</option>
+                            <option value="wagonr">WagonR</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="price">Price Range</label>
+                        <select id="price" name="price" class="search-select">
+                            <option value="">All Prices</option>
+                            <option value="0-500000">Under 5 Lakh</option>
+                            <option value="500000-1000000">5 Lakh - 10 Lakh</option>
+                            <option value="1000000-2000000">10 Lakh - 20 Lakh</option>
+                            <option value="2000000-5000000">20 Lakh - 50 Lakh</option>
+                            <option value="5000000-10000000">50 Lakh - 1 Crore</option>
+                            <option value="10000000+">Above 1 Crore</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="year">Year</label>
+                        <select id="year" name="year" class="search-select">
+                            <option value="">All Years</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Search Cars</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Listings Section -->
+    <section class="section listings-section">
+        <div class="container">
+            <div class="listings-header">
+                <h2 class="section-title">Available Cars</h2>
+                <p class="listings-count">Showing 1,234 results</p>
+            </div>
+            <div class="cards-grid" id="carListings">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Toyota+Corolla+2020" alt="Toyota Corolla 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Toyota Corolla 2020</h3>
+                        <p class="card-price">PKR 3,500,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">15,000 km • Manual • 1.8L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Honda+Civic+2019" alt="Honda Civic 2019">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda Civic 2019</h3>
+                        <p class="card-price">PKR 4,200,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">20,000 km • Automatic • 1.5L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Suzuki+Cultus+2021" alt="Suzuki Cultus 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suzuki Cultus 2021</h3>
+                        <p class="card-price">PKR 2,100,000</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">10,000 km • Manual • 1.0L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Nissan+Sunny+2018" alt="Nissan Sunny 2018">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nissan Sunny 2018</h3>
+                        <p class="card-price">PKR 2,800,000</p>
+                        <p class="card-location">📍 Rawalpindi, Punjab</p>
+                        <p class="card-details">25,000 km • Automatic • 1.6L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Toyota+Camry+2021" alt="Toyota Camry 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Toyota Camry 2021</h3>
+                        <p class="card-price">PKR 5,500,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">8,000 km • Automatic • 2.5L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Honda+City+2020" alt="Honda City 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda City 2020</h3>
+                        <p class="card-price">PKR 3,800,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">12,000 km • CVT • 1.5L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Suzuki+Alto+2022" alt="Suzuki Alto 2022">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suzuki Alto 2022</h3>
+                        <p class="card-price">PKR 1,800,000</p>
+                        <p class="card-location">📍 Faisalabad, Punjab</p>
+                        <p class="card-details">5,000 km • Manual • 0.8L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Mitsubishi+Lancer+2017" alt="Mitsubishi Lancer 2017">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mitsubishi Lancer 2017</h3>
+                        <p class="card-price">PKR 2,500,000</p>
+                        <p class="card-location">📍 Multan, Punjab</p>
+                        <p class="card-details">30,000 km • Manual • 1.6L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Toyota+Vitz+2018" alt="Toyota Vitz 2018">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Toyota Vitz 2018</h3>
+                        <p class="card-price">PKR 2,200,000</p>
+                        <p class="card-location">📍 Peshawar, KPK</p>
+                        <p class="card-details">18,000 km • Automatic • 1.0L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Honda+Accord+2019" alt="Honda Accord 2019">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda Accord 2019</h3>
+                        <p class="card-price">PKR 4,800,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">22,000 km • Automatic • 2.0L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Suzuki+WagonR+2020" alt="Suzuki WagonR 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suzuki WagonR 2020</h3>
+                        <p class="card-price">PKR 1,900,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">15,000 km • Manual • 1.0L</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/300x200/e30613/white?text=Nissan+March+2017" alt="Nissan March 2017">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nissan March 2017</h3>
+                        <p class="card-price">PKR 1,500,000</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">35,000 km • Manual • 1.2L</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn">Load More Cars</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About PakWheels</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cars.html">Used Cars</a></li>
+                        <li><a href="cars.html">New Cars</a></li>
+                        <li><a href="bikes.html">Bikes</a></li>
+                        <li><a href="autostore.html">Auto Parts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Dealers</h4>
+                    <ul>
+                        <li><a href="#dealer-login">Dealer Login</a></li>
+                        <li><a href="#become-dealer">Become a Dealer</a></li>
+                        <li><a href="#dealer-packages">Packages</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@pakwheels.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Address: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon">Facebook</a>
+                        <a href="#twitter" class="social-icon">Twitter</a>
+                        <a href="#instagram" class="social-icon">Instagram</a>
+                        <a href="#youtube" class="social-icon">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PakWheels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

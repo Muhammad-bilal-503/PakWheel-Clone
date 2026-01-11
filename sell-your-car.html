@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Ad in 2 Minutes - PakWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Unified Navigation Bar -->
+    <nav class="unified-navbar">
+        <div class="unified-nav-container">
+            <!-- Left: Logo and Tagline -->
+            <div class="nav-left">
+                <div class="nav-logo-section">
+                    <a href="index.html" class="nav-logo-link">
+                        <img src="PakWheels Logo Vector.png" alt="PakWheels" class="unified-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-text-fallback-unified" style="display:none; align-items:center; gap:10px;">
+                            <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                        </div>
+                    </a>
+                    <div class="nav-tagline">PAKISTAN'S #1 AUTOMOTIVE WEBSITE</div>
+                </div>
+            </div>
+            
+            <!-- Center: Main Menu -->
+            <ul class="unified-nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="used-cars.html" class="nav-link">Used Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="new-cars.html" class="nav-link">New Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bikes.html" class="nav-link">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="autostore.html" class="nav-link">Auto Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forums.html" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a href="guides.html" class="nav-link">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sell-your-car.html" class="nav-link active">Sell Your Car</a>
+                </li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <div class="nav-right">
+                <a href="#urdu" class="nav-action-link">اردو</a>
+                <button class="btn-nav-login">Login</button>
+                <button class="btn-nav-signup">Sign Up</button>
+                <a href="sell-your-car.html" class="btn-nav-post-ad">Post an Ad</a>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <h1 class="page-hero-title">Post Your Ad in 2 Minutes</h1>
+            <p class="page-hero-subtitle">Sell your car quickly to thousands of verified buyers</p>
+        </div>
+    </section>
+
+    <!-- Sell Form Section -->
+    <section class="section sell-form-section">
+        <div class="container">
+            <div class="sell-form-container">
+                <form class="sell-form" id="sellForm">
+                    <h2>Car Details</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="category">Category *</label>
+                            <select id="category" name="category" class="form-select" required>
+                                <option value="">Select Category</option>
+                                <option value="car">Car</option>
+                                <option value="bike">Bike</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="make">Make *</label>
+                            <select id="make" name="make" class="form-select" required>
+                                <option value="">Select Make</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="honda">Honda</option>
+                                <option value="suzuki">Suzuki</option>
+                                <option value="nissan">Nissan</option>
+                                <option value="mitsubishi">Mitsubishi</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="model">Model *</label>
+                            <select id="model" name="model" class="form-select" required>
+                                <option value="">Select Model</option>
+                                <option value="corolla">Corolla</option>
+                                <option value="civic">Civic</option>
+                                <option value="cultus">Cultus</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="year">Year *</label>
+                            <input type="number" id="year" name="year" class="form-input" placeholder="2020" min="1990" max="2024" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="price">Price (PKR) *</label>
+                            <input type="text" id="price" name="price" class="form-input" placeholder="3,500,000" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="city">City *</label>
+                            <select id="city" name="city" class="form-select" required>
+                                <option value="">Select City</option>
+                                <option value="karachi">Karachi</option>
+                                <option value="lahore">Lahore</option>
+                                <option value="islamabad">Islamabad</option>
+                                <option value="rawalpindi">Rawalpindi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="mileage">Mileage (km) *</label>
+                            <input type="number" id="mileage" name="mileage" class="form-input" placeholder="15000" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="transmission">Transmission *</label>
+                            <select id="transmission" name="transmission" class="form-select" required>
+                                <option value="">Select</option>
+                                <option value="manual">Manual</option>
+                                <option value="automatic">Automatic</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-field full-width">
+                        <label for="description">Description *</label>
+                        <textarea id="description" name="description" class="form-textarea" rows="5" placeholder="Describe your vehicle..." required></textarea>
+                    </div>
+                    <div class="form-field full-width">
+                        <label>Upload Photos (Max 10)</label>
+                        <div class="upload-area">
+                            <p>Click to upload or drag and drop</p>
+                            <input type="file" id="photos" name="photos" multiple accept="image/*">
+                        </div>
+                    </div>
+                    <h2>Contact Information</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+92 300 1234567" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Post Your Ad</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About PakWheels</h4>
+                    <p class="footer-desc">Pakistan's #1 automotive marketplace. Buy and sell cars, bikes, and auto parts with confidence.</p>
+                    <div class="footer-logo">
+                        <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="used-cars.html">Used Cars</a></li>
+                        <li><a href="new-cars.html">New Cars</a></li>
+                        <li><a href="bikes.html">Bikes</a></li>
+                        <li><a href="autostore.html">Auto Store</a></li>
+                        <li><a href="forums.html">Forums</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: support@pakwheels.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Address: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon">[FB] Facebook</a>
+                        <a href="#youtube" class="social-icon">[YT] YouTube</a>
+                        <a href="#instagram" class="social-icon">[IG] Instagram</a>
+                        <a href="#twitter" class="social-icon">[X] Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PakWheels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

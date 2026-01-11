@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Bikes for Sale in Pakistan - PakWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Unified Navigation Bar -->
+    <nav class="unified-navbar">
+        <div class="unified-nav-container">
+            <!-- Left: Logo and Tagline -->
+            <div class="nav-left">
+                <div class="nav-logo-section">
+                    <a href="index.html" class="nav-logo-link">
+                        <img src="PakWheels Logo Vector.png" alt="PakWheels" class="unified-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-text-fallback-unified" style="display:none; align-items:center; gap:10px;">
+                            <span style="color:#e30613; font-weight:bold; font-size:20px;">PakWheels</span>
+                        </div>
+                    </a>
+                    <div class="nav-tagline">PAKISTAN'S #1 AUTOMOTIVE WEBSITE</div>
+                </div>
+            </div>
+            
+            <!-- Center: Main Menu -->
+            <ul class="unified-nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="used-cars.html" class="nav-link">Used Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="new-cars.html" class="nav-link">New Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bikes.html" class="nav-link active">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="autostore.html" class="nav-link">Auto Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forums.html" class="nav-link">Forums</a>
+                </li>
+                <li class="nav-item">
+                    <a href="guides.html" class="nav-link">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sell-your-car.html" class="nav-link">Sell Your Car</a>
+                </li>
+            </ul>
+            
+            <!-- Right: Actions -->
+            <div class="nav-right">
+                <a href="#urdu" class="nav-action-link">اردو</a>
+                <button class="btn-nav-login">Login</button>
+                <button class="btn-nav-signup">Sign Up</button>
+                <a href="sell-your-car.html" class="btn-nav-post-ad">Post an Ad</a>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <h1 class="page-hero-title">Used Bikes for Sale in Pakistan</h1>
+            <p class="page-hero-subtitle">Find your perfect motorcycle from thousands of verified listings</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="search-box">
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <label for="city">City</label>
+                        <select id="city" name="city" class="search-select">
+                            <option value="">All Cities</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="rawalpindi">Rawalpindi</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="multan">Multan</option>
+                            <option value="peshawar">Peshawar</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="make">Make</label>
+                        <select id="make" name="make" class="search-select">
+                            <option value="">All Makes</option>
+                            <option value="honda">Honda</option>
+                            <option value="yamaha">Yamaha</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="kawasaki">Kawasaki</option>
+                            <option value="united">United</option>
+                            <option value="roadprince">Road Prince</option>
+                            <option value="superstar">Super Star</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="model">Model</label>
+                        <select id="model" name="model" class="search-select">
+                            <option value="">All Models</option>
+                            <option value="cd70">CD 70</option>
+                            <option value="cd125">CD 125</option>
+                            <option value="cg125">CG 125</option>
+                            <option value="ybr125">YBR 125</option>
+                            <option value="r15">R15</option>
+                            <option value="r1">R1</option>
+                            <option value="hayabusa">Hayabusa</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="price">Price Range</label>
+                        <select id="price" name="price" class="search-select">
+                            <option value="">All Prices</option>
+                            <option value="0-50000">Under 50,000</option>
+                            <option value="50000-100000">50K - 1 Lakh</option>
+                            <option value="100000-200000">1 Lakh - 2 Lakh</option>
+                            <option value="200000-300000">2 Lakh - 3 Lakh</option>
+                            <option value="300000-500000">3 Lakh - 5 Lakh</option>
+                            <option value="500000+">Above 5 Lakh</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="cc">Engine CC</label>
+                        <select id="cc" name="cc" class="search-select">
+                            <option value="">All CC</option>
+                            <option value="70">70 CC</option>
+                            <option value="125">125 CC</option>
+                            <option value="150">150 CC</option>
+                            <option value="200">200 CC</option>
+                            <option value="250">250 CC</option>
+                            <option value="400+">400+ CC</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Search Bikes</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bike Listings Section -->
+    <section class="section listings-section">
+        <div class="container">
+            <div class="listings-header">
+                <h2 class="section-title">Available Bikes</h2>
+                <p class="listings-count">Showing 856 results</p>
+            </div>
+            <div class="cards-grid" id="bikeListings">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda+CD70+2020%3C/text%3E%3C/svg%3E" alt="Honda CD 70 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda CD 70 2020</h3>
+                        <p class="card-price">PKR 85,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">8,000 km • Manual • 70 CC</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EYamaha+YBR125+2019%3C/text%3E%3C/svg%3E" alt="Yamaha YBR 125 2019">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Yamaha YBR 125 2019</h3>
+                        <p class="card-price">PKR 120,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">12,000 km • Manual • 125 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda+CG125+2021%3C/text%3E%3C/svg%3E" alt="Honda CG 125 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda CG 125 2021</h3>
+                        <p class="card-price">PKR 135,000</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">5,000 km • Manual • 125 CC</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EYamaha+R15+2020%3C/text%3E%3C/svg%3E" alt="Yamaha R15 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Yamaha R15 2020</h3>
+                        <p class="card-price">PKR 450,000</p>
+                        <p class="card-location">📍 Rawalpindi, Punjab</p>
+                        <p class="card-details">10,000 km • Manual • 150 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ESuzuki+GS150+2018%3C/text%3E%3C/svg%3E" alt="Suzuki GS 150 2018">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suzuki GS 150 2018</h3>
+                        <p class="card-price">PKR 110,000</p>
+                        <p class="card-location">📍 Faisalabad, Punjab</p>
+                        <p class="card-details">18,000 km • Manual • 150 CC</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda+CD125+2019%3C/text%3E%3C/svg%3E" alt="Honda CD 125 2019">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda CD 125 2019</h3>
+                        <p class="card-price">PKR 95,000</p>
+                        <p class="card-location">📍 Multan, Punjab</p>
+                        <p class="card-details">15,000 km • Manual • 125 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EKawasaki+Ninja+250+2021%3C/text%3E%3C/svg%3E" alt="Kawasaki Ninja 250 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Kawasaki Ninja 250 2021</h3>
+                        <p class="card-price">PKR 650,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">3,000 km • Manual • 250 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EUnited+US70+2020%3C/text%3E%3C/svg%3E" alt="United US 70 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">United US 70 2020</h3>
+                        <p class="card-price">PKR 70,000</p>
+                        <p class="card-location">📍 Lahore, Punjab</p>
+                        <p class="card-details">10,000 km • Manual • 70 CC</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EYamaha+R1+2019%3C/text%3E%3C/svg%3E" alt="Yamaha R1 2019">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Yamaha R1 2019</h3>
+                        <p class="card-price">PKR 1,200,000</p>
+                        <p class="card-location">📍 Islamabad, Capital</p>
+                        <p class="card-details">5,000 km • Manual • 1000 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ERoad+Prince+RP70+2021%3C/text%3E%3C/svg%3E" alt="Road Prince RP 70 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Road Prince RP 70 2021</h3>
+                        <p class="card-price">PKR 65,000</p>
+                        <p class="card-location">📍 Peshawar, KPK</p>
+                        <p class="card-details">7,000 km • Manual • 70 CC</p>
+                        <p class="card-seller">Owner</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EHonda+CB150F+2020%3C/text%3E%3C/svg%3E" alt="Honda CB 150F 2020">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Honda CB 150F 2020</h3>
+                        <p class="card-price">PKR 140,000</p>
+                        <p class="card-location">📍 Rawalpindi, Punjab</p>
+                        <p class="card-details">9,000 km • Manual • 150 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Crect fill='%23eeeeee' width='300' height='200'/%3E%3Ctext fill='%23333333' font-family='Arial, sans-serif' font-size='14' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ESuzuki+Hayabusa+2018%3C/text%3E%3C/svg%3E" alt="Suzuki Hayabusa 2018">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suzuki Hayabusa 2018</h3>
+                        <p class="card-price">PKR 1,800,000</p>
+                        <p class="card-location">📍 Karachi, Sindh</p>
+                        <p class="card-details">12,000 km • Manual • 1300 CC</p>
+                        <p class="card-seller">Dealer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn">Load More Bikes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About PakWheels</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cars.html">Used Cars</a></li>
+                        <li><a href="cars.html">New Cars</a></li>
+                        <li><a href="bikes.html">Bikes</a></li>
+                        <li><a href="autostore.html">Auto Parts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For Dealers</h4>
+                    <ul>
+                        <li><a href="#dealer-login">Dealer Login</a></li>
+                        <li><a href="#become-dealer">Become a Dealer</a></li>
+                        <li><a href="#dealer-packages">Packages</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@pakwheels.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Address: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#facebook" class="social-icon">Facebook</a>
+                        <a href="#twitter" class="social-icon">Twitter</a>
+                        <a href="#instagram" class="social-icon">Instagram</a>
+                        <a href="#youtube" class="social-icon">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PakWheels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
