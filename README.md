@@ -1,6 +1,6 @@
 # PakWheels Clone - Frontend Project
 
-A fully responsive, pixel-accurate frontend clone of PakWheels.com built using only vanilla HTML, CSS, and JavaScript (no frameworks like React, Vue, or Bootstrap).
+A fully responsive, pixel-accurate frontend clone of PakWheels.com built using only vanilla HTML, CSS, and JavaScript.
 
 ## 📋 Project Overview
 
