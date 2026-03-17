@@ -2,7 +2,7 @@
 
 A fully responsive, pixel-accurate frontend clone of PakWheels.com built using only vanilla HTML, CSS, and JavaScript.
 
-## 📋 Project Overview
+##  Project Overview
 
 This project is a complete frontend replica of the PakWheels.com homepage and main pages, featuring:
 - **Unified Navigation Bar** - Single navbar with logo, tagline, menu items, and action buttons
@@ -11,7 +11,7 @@ This project is a complete frontend replica of the PakWheels.com homepage and ma
 - **Interactive Elements** - Hamburger menu, dropdowns, search forms, and "Load More" functionality
 - **SVG Image Placeholders** - All images use reliable SVG data URIs for consistent display
 
-## 🎨 Design Features
+##  Design Features
 
 ### Color Palette
 - **Primary Red**: `#e30613` - Main brand color for buttons and accents
@@ -29,7 +29,7 @@ This project is a complete frontend replica of the PakWheels.com homepage and ma
 - **Navbar Links**: 14px, medium (500)
 - **Section Titles**: 32px, bold (700)
 
-## 📁 File Structure
+##  File Structure
 
 ```
 PakWheel/
@@ -47,7 +47,7 @@ PakWheel/
 └── README.md               # This file
 ```
 
-## 🏗️ Page Structure
+##  Page Structure
 
 ### 1. Homepage (index.html)
 - **Top Header Bar**: Fixed black bar (40px) with "PAKWHEELS.COM" logo, tagline, and action buttons
@@ -100,7 +100,7 @@ PakWheel/
   - Contact Information (Name, Phone, Email)
   - Submit button
 
-## 🎯 Key Features Implemented
+##  Key Features Implemented
 
 ### Navigation
 - **Unified Navbar**: Single navbar combining logo, tagline, menu, and actions
@@ -137,7 +137,7 @@ PakWheel/
 - **Flexible Grids**: All grids adapt from multiple columns to single column on mobile
 - **Stacked Layouts**: Forms and sections stack vertically on small screens
 
-## 💻 Technologies Used
+##  Technologies Used
 
 - **HTML5**: Semantic markup with proper structure
 - **CSS3**: 
@@ -153,7 +153,7 @@ PakWheel/
   - Form handling
 - **Google Fonts**: Roboto font family
 
-## 🎨 CSS Architecture
+##  CSS Architecture
 
 ### CSS Variables
 All colors are defined as CSS variables for easy maintenance:
@@ -180,7 +180,7 @@ All colors are defined as CSS variables for easy maintenance:
 9. **Footer**: Dark footer with columns and social links
 10. **Responsive Design**: Media queries for all breakpoints
 
-## ⚙️ JavaScript Functionality
+##  JavaScript Functionality
 
 ### Core Features
 1. **Mobile Menu Toggle**: Hamburger menu opens/closes navigation
@@ -202,7 +202,7 @@ The project includes dummy data arrays for:
 - **Bikes**: 8 bike listings with details
 - **Products**: 8 auto parts/products with details
 
-## 🖼️ Image Strategy
+##  Image Strategy
 
 All images use **SVG data URIs** for reliability:
 - **Format**: `data:image/svg+xml,<encoded SVG>`
@@ -220,7 +220,7 @@ All images use **SVG data URIs** for reliability:
 - **Guide Images**: 400x250px article images
 - **Product Images**: 300x200px product placeholders
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 ### Mobile (< 768px)
 - Hamburger menu replaces full navigation
@@ -241,7 +241,7 @@ All images use **SVG data URIs** for reliability:
 - Maximum content width: 1200px
 - Optimal spacing and typography
 
-## 🚀 How to Use
+##  How to Use
 
 1. **Open the Project**:
    - Simply open `index.html` in any modern web browser
@@ -261,7 +261,7 @@ All images use **SVG data URIs** for reliability:
    - Click "Load More" buttons to see dynamic content
    - Hover over cards to see animations
 
-## 📝 Important Notes
+##  Important Notes
 
 ### Browser Compatibility
 - Works in all modern browsers (Chrome, Firefox, Safari, Edge)
@@ -284,7 +284,7 @@ All images use **SVG data URIs** for reliability:
 - In a real application, these would be replaced with actual product/car images
 - SVG format ensures images always display
 
-## 🔧 Customization
+##  Customization
 
 ### Changing Colors
 Edit CSS variables in `style.css`:
@@ -310,7 +310,7 @@ const dummyCars = [
 - Spacing: Adjust `gap`, `padding`, `margin` values
 - Breakpoints: Modify `@media` query values
 
-## 📊 Project Statistics
+##  Project Statistics
 
 - **Total Files**: 10 HTML files + 2 assets (CSS, JS)
 - **CSS Lines**: ~1,894 lines
@@ -320,7 +320,7 @@ const dummyCars = [
 - **Color Variables**: 11 CSS variables
 - **Interactive Features**: 8+ JavaScript functions
 
-## ✨ Key Achievements
+##  Key Achievements
 
 ✅ **100% Pixel-Accurate Design** - Matches PakWheels.com visual design  
 ✅ **Fully Responsive** - Works on all screen sizes  
@@ -331,7 +331,7 @@ const dummyCars = [
 ✅ **No Dependencies** - Pure vanilla HTML, CSS, and JavaScript  
 ✅ **Accessible** - Proper semantic HTML and alt text  
 
-## 🐛 Known Limitations
+##  Known Limitations
 
 - Forms don't submit to a backend (frontend prototype only)
 - Search functionality logs to console instead of filtering
@@ -339,11 +339,11 @@ const dummyCars = [
 - Images are placeholders (not real car/bike photos)
 - No user authentication system
 
-## 📄 License
+##  License
 
 This is a frontend prototype/clone project for educational purposes.
 
-## 👨‍💻 Development Notes
+##  Development Notes
 
 ### Project Evolution
 1. **Initial Setup**: Basic homepage structure
